@@ -1,9 +1,3 @@
-allure-results/
-test logs/
 *.iml
 .idea/
-.gradle
-build/
-vitu/build/
-screenshots/
 target/
