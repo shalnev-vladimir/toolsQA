@@ -1,9 +1,7 @@
 package com.pages;
 
 import com.codeborne.selenide.SelenideElement;
-
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.switchTo;
 
 public class AlertPage {
 
@@ -11,6 +9,16 @@ public class AlertPage {
     private final SelenideElement buttonToSeeAlertIn5SecondsAfterClick = $("#timerAlertButton");
     private final SelenideElement confirmBoxAlertButton = $("#confirmButton");
     private final SelenideElement promptBoxButton = $("#promtButton");
+    private final SelenideElement promptResult = $("#promptResult");
+    private final SelenideElement confirmResult = $("#confirmResult");
+
+    public String getConfirmResultText() {
+        return confirmResult.text();
+    }
+
+    public String getPromptResult() {
+        return promptResult.text();
+    }
 
     public SelenideElement getButtonToSeeAlertImmediately() {
         return buttonToSeeAlertImmediately;

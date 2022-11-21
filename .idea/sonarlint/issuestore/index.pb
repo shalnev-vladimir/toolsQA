@@ -3,3 +3,35 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 D
 select_menu_test.xml,4\3\433b393aff921afe182fbace7a441d0bc369f1d9
+O
+src/main/java/com/BasePage.java,2\4\24c0d01c063c34eb09fb83280f31527949794ab1
+Y
+)src/main/java/com/AttributeValidator.java,b\e\be668b8ecdcd31f4ff7b235e3cacefd8baa8a99d
+Y
+)src/main/java/com/PageElementActions.java,0\4\046bb75bee4e907f9edc08efb6eb663c991412ad
+X
+(src/test/java/com/AccordianPageTest.java,9\5\95f2756d44bb875b2ed67a68633c77374b06a936
+O
+src/main/java/com/LeftMenu.java,9\1\91fa02d3093a689ffc60847c9028013b0879c10b
+Y
+)src/test/java/com/SelectMenuPageTest.java,b\5\b50ac44a63ef3905aa25ff90221fa1fdc366631c
+B
+tabs_page_test.xml,4\b\4b0a3668f9ff0b4237a706da10f1f4b3f112c856
+S
+#src/test/java/com/TabsPageTest.java,9\a\9a7fc936b054d692cf9721043ec7f9f39c9afd86
+W
+'src/test/java/com/ToolTipsPageTest.java,6\d\6d4363830a94a6a4cfce087ac222d1ea20227da9
+X
+(src/test/java/com/WebTablesPageTest.java,c\d\cdf47055ddf54b9cda6ee44af8f4f28f60367f59
+Z
+*src/main/java/com/pages/AccordianPage.java,1\f\1ff1133ff9d2410e078def9eabfd0ca49ba57651
+U
+%src/main/java/com/pages/TabsPage.java,b\e\becf9a7bb45ee7b6c8334f566e1a3f3653e58d04
+Y
+)src/main/java/com/pages/ToolTipsPage.java,a\b\ab2e132dc5072c6e9d9d5ff4a252f5bacdc2bb8e
+Z
+*src/main/java/com/pages/WebTablesPage.java,e\5\e5c14f3201b8c18edaf65d86e0dc63eb153ea33f
+Q
+!src/main/java/com/SelectMenu.java,d\c\dccb5186227d709544bf922e6ddd0005641d607a
+W
+'src/test/java/com/CheckboxPageTest.java,f\3\f3a1fe8c82621cac17453710b19d81b5e90442bd

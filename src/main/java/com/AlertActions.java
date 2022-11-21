@@ -1,28 +1,34 @@
 package com;
 
+import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.Alert;
-
-import static com.codeborne.selenide.Selenide.switchTo;
+import static org.testng.Assert.assertEquals;
 
 public class AlertActions {
 
     public static String getAlertText() {
-        return switchTo().alert().getText();
+        return Selenide.switchTo().alert().getText();
+    }
+
+    public static void getAlertTextCheckItIsCorrectAndAcceptAlert(String expectedAlertText) {
+        assertEquals(Selenide.switchTo().alert().getText(), expectedAlertText,
+                "Incorrect alert text");
+        Selenide.switchTo().alert().accept();
     }
 
     // click ok button
     public static void acceptAlert() {
-        switchTo().alert().accept();
+        Selenide.switchTo().alert().accept();
     }
 
     // click cancel button
     public static void dismissAlert() {
-        switchTo().alert().dismiss();
+        Selenide.switchTo().alert().dismiss();
     }
 
     public static void alertSendKeys(String keysToSend) {
-        Alert alert = switchTo().alert();
-        alert.sendKeys(keysToSend);
+        Alert alert = Selenide.switchTo().alert();
+        Selenide.switchTo().alert().sendKeys(keysToSend);
         alert.accept();
     }
 }
