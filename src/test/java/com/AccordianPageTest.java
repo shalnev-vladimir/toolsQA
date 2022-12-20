@@ -1,6 +1,8 @@
 package com;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -28,5 +30,10 @@ public class AccordianPageTest extends TestHelper {
         openByUrl(accordianUrl);
         assertTrue(AttributeValidator.clickElementAndWaitUntilNewClassAppear(accordianPage.getSectionThreeHeading(),
                 accordianPage.getSectionThreeContext(), "show"));
+    }
+
+    @AfterClass
+    void close() {
+        Selenide.closeWebDriver();
     }
 }

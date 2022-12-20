@@ -1,6 +1,8 @@
 package com;
 
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,5 +27,10 @@ public class ToolTipsPageTest extends TestHelper {
         actualToolTipDescriptions.add(toolTipsPage.hoverOverToolTip(toolTipsPage.getToolTipTextField()));
         actualToolTipDescriptions.add(toolTipsPage.hoverOverToolTip(toolTipsPage.getToolTipSectionNumberLink()));
         return actualToolTipDescriptions;
+    }
+
+    @AfterClass
+    void close() {
+        Selenide.closeWebDriver();
     }
 }

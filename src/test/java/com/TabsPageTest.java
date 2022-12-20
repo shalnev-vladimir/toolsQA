@@ -1,6 +1,8 @@
 package com;
 
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -82,5 +84,10 @@ public class TabsPageTest extends TestHelper {
         String actualText = tabsPage.getTextFromUseTextBox();
 
         assertEquals(actualText, useTabText);
+    }
+
+    @AfterClass
+    void close() {
+        Selenide.closeWebDriver();
     }
 }

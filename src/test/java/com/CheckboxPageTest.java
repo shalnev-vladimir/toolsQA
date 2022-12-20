@@ -1,7 +1,9 @@
 package com;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.pages.CheckBoxPage;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.List;
@@ -32,5 +34,10 @@ public class CheckboxPageTest extends TestHelper {
             element.click();
             assertTrue(colors.contains(element.text()));
         }
+    }
+
+    @AfterClass
+    void close() {
+        Selenide.closeWebDriver();
     }
 }

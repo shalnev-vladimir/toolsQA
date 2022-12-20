@@ -1,5 +1,7 @@
 package com;
 
+import com.codeborne.selenide.Selenide;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
@@ -13,5 +15,10 @@ public class SelectMenuPageTest extends TestHelper {
         String actualValue = selectMenu.selectValueInput.getAttribute("innerText");
 
         assertEquals(actualValue, "Group 1, option 1");
+    }
+
+    @AfterClass
+    void close() {
+        Selenide.closeWebDriver();
     }
 }
